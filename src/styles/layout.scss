@@ -138,7 +138,7 @@ body > * {
 }
 
 .reset-button:hover{
-    border-color: rgba(255,255,255,1);
+    border-color: black;
     background-color: darkred;
 }
 
@@ -152,7 +152,6 @@ body > * {
     align-items: center;
 }
 form input {
-    margin-left: 10px;
     margin-right: 10px;
     min-height: 30px;
     border: 2px darkgray solid;
@@ -172,4 +171,62 @@ form button {
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.modal-content {
+    border-radius: 30px;
+    text-align: center;
+}
+
+.create-todo-container input {
+    margin-left: 5px;
+}
+
+.submit-todo {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255,255,255,0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(194, 64, 64);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.submit-todo:hover{
+    border-color: black;
+    background-color: darkred;
+}
+
+.modal-close {
+    margin: 0;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255,255,255,0);
+    border-color: black;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+    color: black;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.modal-close:hover{
+    color: white;
+    border-color: white;
+    background-color: black;
 }
