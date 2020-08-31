@@ -269,10 +269,10 @@ class Kanban extends React.Component {
     return (
       <div id="done-container">
         <h2>{colName}</h2>
-        <button className="mb-15" onClick={() => this.removeCol(colName)}>
+        <button className="mb-15 blue" onClick={() => this.removeCol(colName)}>
           -
         </button>
-        <button className="mb-15" onClick={() => this.addCard(colName)}>
+        <button className="mb-15 blue" onClick={() => this.addCard(colName)}>
           +
         </button>
         <Droppable droppableId={colName}>
@@ -373,7 +373,7 @@ class Kanban extends React.Component {
         <DragDropContext onDragEnd={(result) => this.onDragEnd(result)}>
           <h1 className="main-title">Kanban</h1>
           <div className="createColumn">
-            <form onSubmit={() => this.createColumn()}>
+            <form className="columnForm" onSubmit={() => this.createColumn()}>
               create Column:
               <input
                 type="text"
@@ -382,7 +382,7 @@ class Kanban extends React.Component {
               />
               <button className="createColBtn">+</button>
             </form>
-            <button onClick={this.clearAll}>Reset to default</button>
+            <button className="reset-button" onClick={this.clearAll}>Reset to default</button>
           </div>
           <div className="space-around flex row bg-lightgray height-100">
             {this.state.allColumns.map((column, idx) => (
