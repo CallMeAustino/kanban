@@ -109,8 +109,12 @@ body > * {
     height: 100%;
 }
 
+
 #todos > div{
     margin-bottom: 20px;
+    border-bottom: 1px lightgray solid;
+    border-right: 1px lightgray solid;
+    box-shadow: 2px 3px 3px lightgray;
 }
 
 .blue {
