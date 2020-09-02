@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './mintbean.png';
 import './styles/index.css';
 import Kanban from "./components/kanban"
 import { DndProvider } from "react-dnd";
