@@ -2,13 +2,16 @@
   "name": "mintbean-react-2020-08-28",
   "description": "This project was generated from the Mintbean react-gh-pages template using the mintbean-cli tool.",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://callmeaustino.github.io/kanban/",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -19,7 +22,7 @@
     "react-dnd": "^11.1.3",
     "react-dnd-html5-backend": "^11.1.3",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.3"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
