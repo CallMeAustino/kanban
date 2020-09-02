@@ -8,6 +8,7 @@ html,body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #f2f2f2;
 }
 
 body > * {
@@ -19,7 +20,8 @@ body > * {
 }
 
 .main-title{
-    text-align: center;
+    padding-left: 30px;
+    text-align: left;
     padding-bottom: 15px;
     border-bottom: 3px solid darkgray;
     margin-bottom: 0;
@@ -84,6 +86,12 @@ body > * {
 
 .item-description {
     text-align: left;
+    color: darkred;
+}
+
+.ph-10 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .item-footer {
@@ -112,20 +120,14 @@ body > * {
 
 #todos > div{
     margin-bottom: 20px;
-    border-bottom: 1px lightgray solid;
-    border-right: 1px lightgray solid;
 }
 
 #inprog > div{
     margin-bottom: 20px;
-    border-bottom: 1px lightgray solid;
-    border-right: 1px lightgray solid;
 }
 
 #done > div{
     margin-bottom: 20px;
-    border-bottom: 1px lightgray solid;
-    border-right: 1px lightgray solid;
 }
 
 .blue {
@@ -144,7 +146,6 @@ body > * {
     font-family: 'Roboto' sans-serif;
     font-weight: 300;
     color: #FFF;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align: center;
     transition: all 0.2s;
     background-color: rgb(194, 64, 64);
@@ -158,8 +159,9 @@ body > * {
 }
 
 .createColumn {
-    margin-top: 20px;
-    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(199, 194, 194)
 }
 
 .columnForm {
@@ -208,7 +210,6 @@ form button {
     font-family: 'Roboto' sans-serif;
     font-weight: 300;
     color: #FFF;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align: center;
     transition: all 0.2s;
     background-color: rgb(194, 64, 64);
@@ -234,7 +235,6 @@ form button {
     font-family: 'Roboto' sans-serif;
     font-weight: 300;
     color: black;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align: center;
     transition: all 0.2s;
     background-color: white;

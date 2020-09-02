@@ -26,7 +26,7 @@ class Card extends React.Component {
             <h3 className="ml-10">{this.state.title}</h3>
           </div>
           <div>
-            <p className="ml-10 item-description">{this.state.description}</p>
+            <p className="ph-10 item-description">{this.state.description}</p>
           </div>
         </div>
       </div>
